@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Parking</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Firebase SDKs (v8 – IMPORTANT) -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>SmartPark</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Parking</a>
+      <a href="#">Admin</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="layout">
+      <aside class="slot-list" id="slotList"></aside>
+      <section class="map-card">
+        <div id="map" style="height: 500px;"></div>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- Google Maps -->
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvgv1AlrWiOWkvIrSbSmHTWQZMHRv1DfQ&callback=initMap">
+  </script>
+</body>
+</html>

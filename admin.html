@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Admin Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="parking.html">Parking</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="admin-content-card">
+
+      <h2><span class="emoji-icon">🅿️</span> Parking Slot Management</h2>
+
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Slot ID</th>
+            <th>Current Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="adminTable">
+          <tr>
+            <td>A01</td>
+            <td><span class="slot-status status-available">Available</span></td>
+            <td class="admin-actions">
+              <button class="btn btn-action-toggle">Mark Occupied</button>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>B15</td>
+            <td><span class="slot-status status-occupied">Occupied</span></td>
+            <td class="admin-actions">
+              <button class="btn btn-action-toggle">Mark Available</button>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>C03</td>
+            <td><span class="slot-status status-reserved">Reserved</span></td>
+            <td class="admin-actions">
+              <button class="btn btn-action-toggle">Release Slot</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
